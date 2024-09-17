@@ -1,0 +1,170 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "first_name": "Juan",
+      "last_name": "Pérez",
+      "dni": "12345678",
+      "age": 30,
+      "phone": "987654321",
+      "address": "Av. Lima 123",
+      "user_roles_id": 1
+    },
+    {
+      "id": 2,
+      "first_name": "María",
+      "last_name": "González",
+      "dni": "87654321",
+      "age": 25,
+      "phone": "912345678",
+      "address": "Calle Sol 456",
+      "user_roles_id": 2
+    }
+  ],
+  "user_roles": [
+    {
+      "id": 1,
+      "role": "Owner"
+    },
+    {
+      "id": 2,
+      "role": "User"
+    }
+  ],
+  "scooters": [
+    {
+      "id": 1,
+      "brand": "Xiaomi",
+      "model": "M365",
+      "price": 500,
+      "image": "https://github.com/VelardeSoft/json/issues/1#issue-2526712226",
+      "price_per_hour": "number",
+      "status": "string",
+      "owner_id": "string"
+    },
+    {
+      "id": 2,
+      "brand": "Segway",
+      "model": "Ninebot",
+      "price": 600,
+      "image": "https://github.com/VelardeSoft/json/issues/1#issue-2526712226",
+      "price_per_hour": "number",
+      "status": "string",
+      "owner_id": "string"
+    }
+  ],
+  "reservations": [
+    {
+      "reservation_id": 1,
+      "client_id": 1,
+      "scooter_id": 2,
+      "start_date": "2024-09-15",
+      "end_date": "2024-09-20"
+    },
+    {
+      "reservation_id": 2,
+      "client_id": 2,
+      "scooter_id": 1,
+      "start_date": "2024-09-17",
+      "end_date": "2024-09-19"
+    }
+  ],
+  "rates": [
+    {
+      "id": 1,
+      "comment": "Excelente scooter, muy cómodo.",
+      "star_numb": 5,
+      "client_id": 1,
+      "scooter_id": 1
+    },
+    {
+      "id": 2,
+      "comment": "Buen servicio, pero el scooter era algo lento.",
+      "star_numb": 3,
+      "client_id": 2,
+      "scooter_id": 2
+    },
+    {
+      "id": 3,
+      "comment": "Muy buen scooter, me gustó mucho.",
+      "star_numb": 5,
+      "client_id": 1,
+      "scooter_id": 1
+    },
+    {
+      "id": 4,
+      "comment": "Prueba api 123123",
+      "star_numb": 5,
+      "client_id": 1,
+      "scooter_id": 1
+    }
+  ],
+  "payments": [
+    {
+      "id": 1,
+      "number": 123456789012,
+      "date": "2024-09-15",
+      "three_back_num": 123,
+      "user_id": 1
+    },
+    {
+      "id": 2,
+      "number": 987654321012,
+      "date": "2024-09-16",
+      "three_back_num": 456,
+      "user_id": 2
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": 1,
+      "price": 15.99,
+      "subscription_types_id": 1,
+      "user_id": 1,
+      "created_date": "2024-09-01"
+    },
+    {
+      "id": 2,
+      "price": 9.99,
+      "subscription_types_id": 2,
+      "user_id": 2,
+      "created_date": "2024-09-02"
+    }
+  ],
+  "subscription_types": [
+    {
+      "id": 1,
+      "types": "Premium"
+    },
+    {
+      "id": 2,
+      "types": "Basic"
+    }
+  ],
+  "history": [
+    {
+      "id": 1,
+      "reservation_id": 1,
+      "date": "2024-09-20"
+    },
+    {
+      "id": 2,
+      "reservation_id": 2,
+      "date": "2024-09-19"
+    }
+  ],
+  "auth": [
+    {
+      "id": 1,
+      "email": "juan.perez@example.com",
+      "password": "$2a$10$7VhOHGx1plMD3M5z/dUke.mRpuOf2OpA5pu6Z94yEjkfrH9V8Dm/W",
+      "user_id": 1
+    },
+    {
+      "id": 2,
+      "email": "maria.gonzalez@example.com",
+      "password": "$2a$10$zB/gKuwRfOqlItiiyEJYGOWv4Q6ps0DpxxgY/jDOIjcIqA5qxjOAi",
+      "user_id": 2
+    }
+  ]
+}
