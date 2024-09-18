@@ -7,6 +7,7 @@
       "dni": "12345678",
       "age": 30,
       "phone": "987654321",
+      "email": "juan.perez@example.com",
       "address": "Av. Lima 123",
       "user_roles_id": 1
     },
@@ -17,6 +18,7 @@
       "dni": "87654321",
       "age": 25,
       "phone": "912345678",
+      "email": "maria.gonzalez@example.com",
       "address": "Calle Sol 456",
       "user_roles_id": 2
     }
@@ -118,27 +120,38 @@
   "subscriptions": [
     {
       "id": 1,
-      "price": 15.99,
+      "price": 39,
       "subscription_types_id": 1,
       "user_id": 1,
       "created_date": "2024-09-01"
     },
     {
       "id": 2,
-      "price": 9.99,
+      "price": 99,
       "subscription_types_id": 2,
       "user_id": 2,
       "created_date": "2024-09-02"
+    },
+    {
+      "id": 3,
+      "price": 199,
+      "subscription_types_id": 3,
+      "user_id": 3,
+      "created_date": "2024-09-03"
     }
   ],
   "subscription_types": [
     {
       "id": 1,
-      "types": "Premium"
+      "types": "Mensual"
     },
     {
       "id": 2,
-      "types": "Basic"
+      "types": "Trimestral"
+    },
+    {
+      "id": 3,
+      "types": "Anual"
     }
   ],
   "history": [
