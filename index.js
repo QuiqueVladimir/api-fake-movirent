@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
-const dataPath = path.join(__dirname, 'public', 'movirent.json');
+const dataPath = path.join(__dirname, 'public', 'oncontrol.json');
 const getData = () => JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
 
 app.get('/movirent/api/', (req, res) => {
